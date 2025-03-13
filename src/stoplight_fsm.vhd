@@ -83,7 +83,7 @@ begin
 	-- Next state logic
 
     f_Q_next(0) <= (not f_Q(1)) and i_C;
-    f_Q_next(0) <= not f_Q(1) and not f_Q(0) and not i_C;
+    f_Q_next(0) <= not f_Q(1) and f_Q(0) and not i_C;
     
 	
 	-- Output logic
